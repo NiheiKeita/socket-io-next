@@ -1,5 +1,5 @@
-import { useCallback } from "react";
-import { LocalStorageUser } from "./types";
+import { useCallback } from "react"
+import { LocalStorageUser } from "./types"
 
 export const useLocalStorageUser = () => {
     const getLocalStorageUser = useCallback((): LocalStorageUser | null => {

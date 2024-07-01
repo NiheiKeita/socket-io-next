@@ -1,9 +1,9 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { HomeView } from '.';
+import { Meta, StoryObj } from '@storybook/react'
+import { ConnectionManager } from '.'
 
-const meta: Meta<typeof HomeView> = {
-  title: 'views/HomeView',
-  component: HomeView,
+const meta: Meta<typeof ConnectionManager> = {
+  title: 'views/ConnectionManager',
+  component: ConnectionManager,
   tags: ['autodocs'],
 }
 export default meta

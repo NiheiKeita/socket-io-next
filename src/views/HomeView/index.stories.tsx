@@ -1,5 +1,5 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { HomeView } from '.';
+import { Meta, StoryObj } from '@storybook/react'
+import { HomeView } from '.'
 
 const meta: Meta<typeof HomeView> = {
   title: 'views/HomeView',

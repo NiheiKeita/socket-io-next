@@ -21,6 +21,7 @@ export const usePostUserAPI = () => {
                 name: user.userName,
                 id: user.userId,
             })
+
             return
         }
         if (!name) return

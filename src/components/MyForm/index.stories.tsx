@@ -1,9 +1,9 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { HomeView } from '.';
+import { Meta, StoryObj } from '@storybook/react'
+import { MyForm } from '.'
 
-const meta: Meta<typeof HomeView> = {
-  title: 'views/HomeView',
-  component: HomeView,
+const meta: Meta<typeof MyForm> = {
+  title: 'views/MyForm',
+  component: MyForm,
   tags: ['autodocs'],
 }
 export default meta

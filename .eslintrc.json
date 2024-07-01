@@ -1,14 +1,40 @@
 {
   "env": {
-    "jest": true
+    "browser": true,
+    "es2021": true,
+    "jest": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:tailwindcss/recommended",
-    "prettier",
-    "plugin:storybook/recommended"
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "plugin:tailwindcss/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "tailwindcss"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "off",
+    "newline-before-return": "warn",
+    "semi": ["error", "never"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "root": true
 }

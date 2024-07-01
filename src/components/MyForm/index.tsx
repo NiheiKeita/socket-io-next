@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { socket } from '@/socket';
+import React, { useState } from 'react'
+import { socket } from '@/socket'
 
 export const MyForm = React.memo(function MyForm() {
-  const [value, setValue] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const [value, setValue] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   function onSubmit(event: any) {
-    event.preventDefault();
-    setIsLoading(true);
+    event.preventDefault()
+    setIsLoading(true)
 
     socket.timeout(5000).emit('create-something', value, () => {
-      setIsLoading(false);
-    });
+      setIsLoading(false)
+    })
   }
 
   return (
@@ -20,5 +20,5 @@ export const MyForm = React.memo(function MyForm() {
 
       <button type="submit" disabled={isLoading}>Submit</button>
     </form>
-  );
+  )
 })

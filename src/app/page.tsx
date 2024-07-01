@@ -1,10 +1,10 @@
 
-import { HomeView } from "@/views/HomeView";
-import React from "react";
+import { HomeView } from "@/views/HomeView"
+import React from "react"
 
 const HomePage = React.memo(() => {
-  return <HomeView />;
-});
+  return <HomeView />
+})
 
-export default HomePage;
-HomePage.displayName = "HomePage";
+export default HomePage
+HomePage.displayName = "HomePage"

@@ -18,6 +18,7 @@ export const useGetQuestionListAPI = () => {
                     const title = question.title
                     const detail = question.detail
                     const exampleCode = question.exampleCode
+
                     return { id, title, detail, exampleCode }
                 })
                 setQuestions(data.questions)
