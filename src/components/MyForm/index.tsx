@@ -16,9 +16,10 @@ export const MyForm = React.memo(function MyForm() {
 
   return (
     <form onSubmit={onSubmit}>
-      <input onChange={e => setValue(e.target.value)} />
+      <input className='text-black' onChange={e => setValue(e.target.value)} />
 
       <button type="submit" disabled={isLoading}>Submit</button>
+      {isLoading && <>loading</>}
     </form>
   )
 })
