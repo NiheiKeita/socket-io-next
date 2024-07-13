@@ -1,5 +1,5 @@
 
-import Content from "@/components/Content"
+import Content from "@/components/oldSocket/Content"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

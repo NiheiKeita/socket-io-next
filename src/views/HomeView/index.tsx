@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect } from 'react'
 import { socket } from '@/socket'
-import { ConnectionState } from '@/components/ConnectionState'
-import { ConnectionManager } from '@/components/ConnectionManager'
-import { Events } from "@/components/Events"
-import { MyForm } from '@/components/MyForm'
+import { ConnectionState } from '@/components/oldSocket/ConnectionState'
+import { Events } from "@/components/oldSocket/Events"
+import { MyForm } from '@/components/oldSocket/MyForm'
+import { ConnectionManager } from '@/components/oldSocket/ConnectionManager'
 
 export const HomeView = React.memo(function HomeView() {
   const [isConnected, setIsConnected] = useState(socket.connected)
