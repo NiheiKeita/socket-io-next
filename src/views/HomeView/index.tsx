@@ -23,7 +23,6 @@ export const HomeView = React.memo(function HomeView() {
     function onFooEvent(value: any) {
       setFooEvents((previous: any) => [...previous, value])
     }
-
     socket.on('connect', onConnect)
     socket.on('disconnect', onDisconnect)
     socket.on('foo', onFooEvent)

@@ -1,5 +1,5 @@
 'use client'
-import MessageList from '@/components/socket/MessageList'
+import MessageList from '@/views/MessageList'
 import { Suspense } from 'react'
 
 // メッセージの入力と一覧を行うページコンポーネント
